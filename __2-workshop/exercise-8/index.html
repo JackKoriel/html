@@ -8,45 +8,39 @@
     <title>Document</title>
 </head>
 <body>
+    <form>
     <h1>Registration form</h1>
-    <table>
-        <tr>
-            <td>Username</td>
-            <td><input></td>
-            <td>Password</td>
-            <td><input></td>
-            <td>Email</td>
-            <td><input></td>
-        </tr>
-    </table>
+            <label for="username">Username</label>
+            <input id="username">
+            <lable for="password">Password</lable>
+            <input id="password">
+            <lable for="email">Email</lable>
+            <input id="email">
     <h2>Which taxi do you require?</h2>
-    <table>
-        <tr>
-            <td>Car</td>
-            <td><input type="radio"></td>
-            <td>Van</td>
-            <td><input type="radio"></td>
-            <td>Tuk Tuk</td>
-            <td><input type="radio"></td>
-        </tr>
-    </table>
+            <label for="car">Car</label>
+            <input type="radio" id="car">
+            <label for="van">Van</label>
+            <input type="radio" id="van">
+            <label for="tuktuk">Tuk Tuk</label>
+            <input type="radio" id="tuktuk">
     <h2>Choose your extras</h2>
-    <table>
-        <tr>
-            <td>Baby seat</td>
-            <td><input type="checkbox"></td>
-            <td>Wheelchair access</td>
-            <td><input type="checkbox"></td>
-            <td>Privacy windows</td>
-            <td><input type="checkbox"></td>
-        </tr>
-    </table>
+            <label for="babyseat">Baby seat</label>
+            <input type="checkbox" id="babyseat">
+            <lalbel for="wheelchair">Wheelchair access</lalbel>
+            <input type="checkbox" id="wheelchair">
+            <label for="privacyWindow">Privacy windows</label>
+            <input type="checkbox" id="privacyWindow">
     <h2>Where would you like us to pick you up?</h2>
-    <label>Pickup Location:</label>
-    <select> <option>Select One </option> </select>
+    <label for="pickup">Pickup Location:</label>
+    <select> 
+        <option id="selectOne">Select One</option>
+        <option id="home">Home</option> 
+        <option id="office">Office</option> 
+    </select>
     <h2>Additional instructions</h2>
-    <label>Special</label>
+    <label for="special">Special</label>
     <textarea> provide special instructions here</textarea>
     <input type="submit" value="Submit">
+</form>
 </body>
 </html>
