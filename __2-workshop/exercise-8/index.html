@@ -11,18 +11,18 @@
     <form>
     <h1>Registration form</h1>
             <label for="username">Username</label>
-            <input id="username">
+            <input id="username" type="text">
             <lable for="password">Password</lable>
-            <input id="password">
+            <input id="password" type="password">
             <lable for="email">Email</lable>
             <input id="email">
     <h2>Which taxi do you require?</h2>
             <label for="car">Car</label>
-            <input type="radio" id="car">
+            <input type="radio" id="car" name="taxi" value="car">
             <label for="van">Van</label>
-            <input type="radio" id="van">
+            <input type="radio" id="van" name="taxi" value="van">
             <label for="tuktuk">Tuk Tuk</label>
-            <input type="radio" id="tuktuk">
+            <input type="radio" id="tuktuk" name="taxi" value="tuktuk">
     <h2>Choose your extras</h2>
             <label for="babyseat">Baby seat</label>
             <input type="checkbox" id="babyseat">
@@ -39,7 +39,7 @@
     </select>
     <h2>Additional instructions</h2>
     <label for="special">Special</label>
-    <textarea> provide special instructions here</textarea>
+    <textarea name="special" placeholder="provide special instructions here"></textarea>
     <input type="submit" value="Submit">
 </form>
 </body>
